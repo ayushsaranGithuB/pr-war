@@ -10,6 +10,11 @@
 #loading {
     width: 100%;
     text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 50%;
+    margin: 3em auto 2em;
+    padding: 1em 0 3em;
 }
 
 #loading img {
@@ -20,7 +25,7 @@
 /* RESULTS */
 
 #results {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 60px;
@@ -42,6 +47,7 @@ span.vs {
     font-weight: 700;
     text-align: center;
     line-height: 40px;
+    background-color: var(--color-accent);
 }
 
 #results h2 {
@@ -63,16 +69,17 @@ span.vs {
     max-width: 370px;
 }
 
-
 #scorecard table {
     width: 100%;
-    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+    border-collapse: inherit;
 }
 
 #scorecard table th {
     padding: 0.5em 1em;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     background-color: var(--color-dark);
     color: var(--color-light);
 }
@@ -90,6 +97,7 @@ span.vs {
     padding: 0.5em 0.5em;
     text-align: center;
     border-bottom: 3px solid #333;
+    border-collapse: collapse;
     background-color: #f0f0f0;
     text-transform: uppercase;
     font-size: 13px;
@@ -111,7 +119,8 @@ span.vs {
 }
 
 #scorecard table tr:last-child td {
-    border-top: 4px solid #333;
+    border-top: 3px solid #333;
+    background-color: #e0ded0;
 }
 
 #scorecard table tr:last-child td:first-child {
@@ -122,6 +131,7 @@ span.vs {
     border-bottom-right-radius: 6px;
 }
 
+
 #scorecard table td.winner p {
     background-color: var(--color-accent);
     font-weight: 700;
@@ -130,6 +140,11 @@ span.vs {
 
 #winner {
     text-align: center;
+}
+
+#winner h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 #winner p {

@@ -152,7 +152,7 @@ function caclulateWinner() {
     document.getElementById("winner_name").innerText = urlParams.get("topic_a");
   } else if (score_a < score_b) {
     document.querySelector("#tot_score .b").classList.add("winner");
-    document.getElementById("winner_name").innerText = urlParams.get("topic_a");
+    document.getElementById("winner_name").innerText = urlParams.get("topic_b");
   } else {
     document.querySelector("#tot_score .a").classList.add("tied");
     document.querySelector("#tot_score .b").classList.add("tied");
@@ -174,6 +174,6 @@ function showArticles(articles) {
 }
 
 // on load
-// setTimeout(() => {
-fetchData();
-// }, 1000);
+setTimeout(() => {
+  fetchData();
+}, 2000);

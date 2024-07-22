@@ -43,7 +43,7 @@ app.get("/api/search/:query", cacheSuccesses, async (req, res) => {
   // make the call to the SearchTopic function and pass in the query parameter
   let query = req.params.query;
 
-  console.log(query);
+  // console.log(query);
 
   // Set Date range in seconds since the epoch, for the search to the last 3 months
   let datefrom = Math.floor(Date.now() / 1000) - 7776000;
@@ -51,7 +51,7 @@ app.get("/api/search/:query", cacheSuccesses, async (req, res) => {
 
   const API_KEY = process.env.FEEDRIKA_API_KEY;
   const url = `https://api.feedrika.com/?apiKey=${API_KEY}&q=${query}&from=${datefrom}&to=${dateto}`;
-  console.log(url);
+  // console.log(url);
   const result = await fetch(url)
     .then((response) => response.json())
     .then((data) => {
