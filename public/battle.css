@@ -195,3 +195,41 @@ span.vs {
     color: #16aeb1;
     text-decoration: none;
 }
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 600px) {
+
+
+    #loading {
+        width: 80%;
+    }
+
+    #loading h2 {
+        font-size: 18px;
+    }
+
+    #results {
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #competitors {
+        margin-bottom: 20px;
+    }
+
+    #sources {
+        grid-column: auto;
+    }
+
+    #scorecard {
+        grid-row: auto;
+        margin: 0 auto 20px;
+    }
+
+    #sources #articles_list {
+        grid-template-columns: 1fr;
+    }
+
+}
