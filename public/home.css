@@ -77,8 +77,11 @@ header nav a {
 /* SEARCH FORM */
 
 .search-form {
-    margin: 2em 0 1em;
+    margin: 3em 0 0em;
     position: relative;
+    background-color: var(--color-accent);
+    border-radius: 12px;
+    padding: 1em 4em 2em;
 }
 
 .search-form h3 {
@@ -98,7 +101,6 @@ header nav a {
 
 .search-form button {
     padding: 1em 2em;
-    border: 1px solid #ccc;
     border-radius: 60px;
     background-color: #313131;
     cursor: pointer;
@@ -107,6 +109,15 @@ header nav a {
     margin: 1em auto 0;
     font-size: 1.2em;
 }
+
+.search-form button:hover {
+    background-color: #464646;
+}
+
+.search-form button:active {
+    scale: 0.9;
+}
+
 
 .tooltip {
     width: 120px;
