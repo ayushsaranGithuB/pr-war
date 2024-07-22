@@ -21,20 +21,32 @@
     width: clamp(150px, 50%, 300px);
 }
 
+#loading.hide {
+    animation: fade-out 1s ease-in forwards;
+}
+
 
 /* RESULTS */
 
 #results {
-    display: none;
+    opacity: 0;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-top: 60px;
+}
+
+#results.show {
+    opacity: 0;
+    animation: fade-up 1s ease-in forwards;
+    animation-delay: 1000ms;
 }
 
 #competitors {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 span.vs {

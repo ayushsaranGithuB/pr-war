@@ -14,8 +14,8 @@ async function fetchData() {
 
     console.log(apiResponse_a, apiResponse_b);
 
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("results").style.display = "grid";
+    document.getElementById("loading").classList.add("hide");
+    document.getElementById("results").classList.add("show");
 
     showStats(apiResponse_a.result, "a");
     showStats(apiResponse_b.result, "b");

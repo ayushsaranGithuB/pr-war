@@ -89,6 +89,9 @@ img.hero {
     background-color: var(--color-accent);
     border-radius: 12px;
     padding: 1em 4em 2em;
+    opacity: 0;
+    animation: fade-up 1s ease-in forwards;
+    animation-delay: 750ms;
 }
 
 .search-form h3 {
@@ -161,6 +164,9 @@ img.hero {
     margin: 0 auto;
     padding: 1em 0 1em;
     text-align: center;
+    opacity: 0;
+    animation: fade-up 1s ease-in forwards;
+    animation-delay: 1250ms;
 }
 
 .scroller h4 {
@@ -213,6 +219,35 @@ ul.tags li:hover {
 
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    99% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+
+    100% {
+        display: none;
     }
 }
 
