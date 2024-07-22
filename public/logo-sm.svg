@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 105.9 64.7">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #282828;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-5 {
+        stroke: #fff;
+        stroke-width: 9px;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="paper-sm">
+    <rect class="cls-3" x="4.6" y="41.5" width="96.8" height="18.8"/>
+    <rect class="cls-5" x="4.6" y="41.5" width="96.8" height="18.8"/>
+    <rect class="cls-6" x="4.6" y="41.5" width="96.8" height="18.8"/>
+    <g class="cls-4">
+      <g class="cls-4">
+        <path class="cls-1" d="M47,45.8h3.1l-3.9,10.6h-4.3l-3.2-8.2-3.3,8.2h-4.3l-3.8-10.6h3.1l2.9,8.3,3.3-8.3h4.2l3.2,8.3,2.9-8.3Z"/>
+      </g>
+      <g class="cls-4">
+        <path class="cls-1" d="M60.9,56.4l-1-2h-6.6l-1,2h-3.3l5.5-10.6h4.3l5.5,10.6h-3.3ZM54.5,52.1h4.2l-2.1-4.2-2.1,4.2Z"/>
+      </g>
+      <g class="cls-4">
+        <path class="cls-1" d="M78.2,54.1v2.3h-3.1v-1.8c0-1-.2-1.3-1.3-1.3h-5v3h-3.1v-10.6h8.2c2.8,0,4.3,1.1,4.3,3.4s-.7,2.5-1.9,2.9c1.1.1,1.8.8,1.8,2ZM68.9,48.3v2.6h4.3c.9,0,1.8,0,1.8-1.3s-.9-1.3-1.8-1.3h-4.3Z"/>
+      </g>
+    </g>
+    <polygon class="cls-1" points="17.4 47 18.5 50.2 21.9 50.2 19.1 52.2 20.2 55.5 17.4 53.5 14.7 55.5 15.7 52.2 12.9 50.2 16.4 50.2 17.4 47"/>
+    <polygon class="cls-1" points="88.5 46.8 89.6 50 93 50 90.2 52 91.3 55.3 88.5 53.3 85.7 55.3 86.8 52 84 50 87.5 50 88.5 46.8"/>
+    <rect class="cls-1" y="5.9" width="64.1" height="29.6"/>
+    <g class="cls-4">
+      <g class="cls-4">
+        <path class="cls-3" d="M10.1,11.6h14.1c4.4,0,7.1,2.8,7.1,7.4s-2.7,7.4-7.1,7.4h-8.9v5.1h-5.2V11.6ZM15.4,16.5v5h7.5c1.4,0,3.1,0,3.1-2.5s-1.7-2.5-3.1-2.5h-7.5Z"/>
+      </g>
+      <g class="cls-4">
+        <path class="cls-3" d="M56.8,27.2v4.4h-5.2v-3.3c0-1.9-.4-2.4-2.2-2.4h-8.4v5.7h-5.2V11.6h13.8c4.7,0,7.3,2.1,7.3,6.3s-1.2,4.7-3.2,5.5c1.9.2,3.1,1.5,3.1,3.8ZM41,16.3v4.8h7.3c1.6,0,3.1,0,3.1-2.4s-1.5-2.4-3.1-2.4h-7.3Z"/>
+      </g>
+    </g>
+    <g id="paper">
+      <path class="cls-2" d="M74,8.9h16.7v8.9h-16.7v-8.9Z"/>
+      <path class="cls-2" d="M74,4.5h24.5v2.2h-24.5v-2.2Z"/>
+      <path class="cls-2" d="M87.4,29h6.7v2.2h-6.7v-2.2Z"/>
+      <path class="cls-2" d="M92,9h6.7v2.2h-6.7v-2.2Z"/>
+      <path class="cls-2" d="M92,12.3h6.7v2.2h-6.7v-2.2Z"/>
+      <path class="cls-2" d="M92,15.6h6.7v2.2h-6.7v-2.2Z"/>
+      <path class="cls-2" d="M87.4,24.5h11.2v2.2h-11.2v-2.2Z"/>
+      <path class="cls-2" d="M87.4,20.1h11.2v2.2h-11.2v-2.2Z"/>
+      <path class="cls-2" d="M74,29h11.2v2.2h-11.2v-2.2Z"/>
+      <path class="cls-2" d="M74,24.5h11.2v2.2h-11.2v-2.2Z"/>
+      <path class="cls-2" d="M74,20.1h11.2v2.2h-11.2v-2.2Z"/>
+      <path class="cls-2" d="M103.1,4.5V0h-33.5v32.4c0,1.8,1.5,3.3,3.3,3.3h29c1.8,0,3.3-1.5,3.3-3.3V4.5h-2.2,0ZM72.9,33.5c-.6,0-1.1-.5-1.1-1.1V2.2h29v27.9c0,3.3,2.2,3.3,2.2,3.3h-30.1Z"/>
+    </g>
+  </g>
+</svg>

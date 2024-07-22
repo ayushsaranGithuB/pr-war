@@ -1,0 +1,182 @@
+#container {
+    justify-content: flex-start;
+}
+
+#results {
+    display: none;
+}
+
+
+#loading {
+    width: 100%;
+    text-align: center;
+}
+
+#loading img {
+    width: clamp(150px, 50%, 300px);
+}
+
+
+/* RESULTS */
+
+#results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 60px;
+}
+
+#competitors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.vs {
+    border: 6px solid var(--color-dark);
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 49px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+}
+
+#results h2 {
+    text-align: center;
+    font-size: 38px;
+    margin: 5px 0;
+}
+
+#results h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px auto 10px;
+}
+
+#scorecard {
+    grid-row: span 2;
+    max-width: 370px;
+}
+
+
+#scorecard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#scorecard table th {
+    padding: 0.5em 1em;
+    text-align: center;
+    font-size: 18px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+#scorecard table th:first-child {
+    border-top-left-radius: 6px;
+}
+
+#scorecard table th:last-child {
+    border-top-right-radius: 6px;
+}
+
+
+#scorecard table td {
+    padding: 0.5em 0.5em;
+    text-align: center;
+    border-bottom: 3px solid #333;
+    background-color: #f0f0f0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#scorecard table td p {
+    margin: 0;
+}
+
+#scorecard table tr td:first-child {
+    border-left: 3px solid #333;
+    font-size: 15px;
+}
+
+#scorecard table tr td:last-child {
+    border-right: 3px solid #333;
+    font-size: 15px;
+}
+
+#scorecard table tr:last-child td {
+    border-top: 4px solid #333;
+}
+
+#scorecard table tr:last-child td:first-child {
+    border-bottom-left-radius: 6px;
+}
+
+#scorecard table tr:last-child td:last-child {
+    border-bottom-right-radius: 6px;
+}
+
+#scorecard table td.winner p {
+    background-color: var(--color-accent);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#winner {
+    text-align: center;
+}
+
+#winner p {
+    background-color: var(--color-accent);
+    margin: 0 auto;
+    width: max-content;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0.2em 1em;
+}
+
+
+/* SOURCES */
+
+#sources {
+    grid-column: span 2;
+    margin-top: 30px;
+    text-align: center;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 1em 0.5em 2em;
+    border-radius: 8px;
+}
+
+#sources h3 {
+    margin: 10px 0 25px;
+}
+
+#sources #articles_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    column-gap: 25px;
+    margin: 0 2em;
+}
+
+#articles_list .article {
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    background: url('/favicon-32x32.png') no-repeat 0 5px;
+    background-size: 20px;
+    font-size: 0.9em;
+
+}
+
+#sources a:link {
+    color: #16aeb1;
+    text-decoration: none;
+}

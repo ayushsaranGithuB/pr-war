@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let the battle begin...</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="battle.css">
+    <!-- favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <script src="battle.js" defer></script>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+        <div id="container">
+
+            <% if(topic_a && topic_b) { %>
+
+                <div id="loading">
+                    <img src="loading.svg" alt="loading">
+                    <h2>Fetching news articles...</h2>
+                </div>
+
+                <div id="results">
+
+                    <div id="competitors">
+                        <h2><%- topic_a %></h2>
+                        <span class="vs">
+                            vs
+                        </span>
+                        <h2> <%- topic_b %> </h2>
+                    </div>
+
+
+
+                    <div id="scorecard">
+                        <h3>Scorecard</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><%- topic_a %></th>
+                                    <th>vs</th>
+                                    <th><%- topic_b %></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="tot_mentions">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Total Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="avg_sentiment">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Average Sentiment</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_positive">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Positive Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_negative">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Negative Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_score">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Total Score</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="winner">
+                        <h3>Winner:</h3>
+                        <p id="winner_name">...</p>
+                    </div>
+
+
+                    <div id="sources">
+                        <h3>SOURCES</h3>
+                        <div id="articles_list"> </div>
+                    </div>
+
+                    <% } else { %>
+
+                        <h1>Oops! we didn't get the competitors</h1>
+
+                        <% } %>
+
+
+
+                </div><!-- /container -->
+                <footer>
+                    <p>&copy; 2024 <a href="http://ayushsaran.info">Ayush Saran</a>. Powered by <a
+                            href="http://feedrika.com">FeedRika News API</a></p>
+                </footer>
+</body>
+
+</html>

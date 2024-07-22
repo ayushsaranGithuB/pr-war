@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Trends</title>
+    <link rel="stylesheet" href="/home.css">
+    <script src="welcome.js" defer></script>
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+        <div id="container">
+            <img src="logo-lg.svg" width="250" alt="">
+            <h3>Select 2 competitors to start the battle.</h3>
+            <form class="search-form" action="/battle" method="get">
+                <div>
+                    <input id="search-topic-a" type="text" name="topic_a" placeholder="Search for a company">
+                    <strong>VS</strong>
+                    <input id="search-topic-b" type="text" name="topic_b" placeholder="Select an opponent">
+                </div>
+                <button type="submit">Search</button>
+            </form>
+            <div class="scroller">
+                <h4>Recent Fights:</h4>
+                <ul class="tags">
+                    <li>Apple vs Microsoft</li>
+                    <li>Trump vs Biden</li>
+                    <li>Google vs Facebook</li>
+                    <li>SpaceX vs Blue Origin</li>
+                    <li>Amazon vs Shopify</li>
+                    <li>ChatGPT vs Gemini</li>
+                    <li>Threads vs Twitter(X)</li>
+                    <li>Netflix vs Hulu</li>
+                    <li>Apple vs Microsoft</li>
+                    <li>Trump vs Biden</li>
+                    <li>Google vs Facebook</li>
+                    <li>SpaceX vs BlueOrigin</li>
+                    <li>Amazon vs Shopify</li>
+                    <li>ChatGPT vs Gemini</li>
+                    <li>Threads vs Twitter(X)</li>
+                    <li>Netflix vs Hulu</li>
+                </ul>
+            </div>
+        </div>
+</body>
+
+</html>
