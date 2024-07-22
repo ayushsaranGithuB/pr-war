@@ -4,7 +4,7 @@
 
 P.R. War is a news experiment that aims to provide a tool for people to see current news sentiment for a specific topic.
 
-It the Feedrika News API to gather news articles and sentiments of those articles, then display the results in a visual format so that users can quickly see who's winning the PR war between any two topics.
+It uses the Feedrika News API to gather news articles and sentiments of those articles, then display the results in a visual format so that users can quickly see who's winning the PR war between any two topics.
 
 ## See it in action:
 
