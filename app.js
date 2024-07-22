@@ -29,6 +29,11 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+// define the route for the about page
+app.get("/about", (req, res) => {
+  res.render("about");
+});
+
 // define the route for the /search endpoint
 app.get("/battle", (req, res) => {
   // Get the query parameter from the request

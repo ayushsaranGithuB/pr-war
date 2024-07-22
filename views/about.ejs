@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About P.R. War - A News Experiement?</title>
+    <link rel="stylesheet" href="/home.css">
+</head>
+
+<body>
+    <%- include('partials/navbar') %>
+        <div id="container">
+            <div class="about">
+
+                <h1>About</h1>
+                <div id="about">
+                    <p>
+                        P.R. War is a news experiment that aims to provide a tool for people to see current news
+                        sentiment
+                        for a specific topic.
+
+                    </p>
+                    <p>
+                        We use the Feedrika News API to gather news articles and sentiments of those
+                        articles, then display the results in a visual format so that users can quickly see who's
+                        winning
+                        the PR war between any two topics.
+                    </p>
+
+                    <%- include('partials/footer') %>
+
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

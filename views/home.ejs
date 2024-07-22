@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Trends</title>
+    <title>P.R. War - Who's winning the News?</title>
     <link rel="stylesheet" href="/home.css">
     <script src="welcome.js" defer></script>
 </head>
@@ -12,7 +12,7 @@
 <body>
     <%- include('partials/navbar') %>
         <div id="container">
-            <img src="logo-lg.svg" width="250" alt="">
+            <img src="logo-lg.svg" width="250" alt="" class="hero">
             <form class="search-form" action="/battle" method="get">
                 <h3>Select 2 competitors to start the battle.</h3>
                 <div>
@@ -43,7 +43,9 @@
                     <li>Netflix vs Hulu</li>
                 </ul>
             </div>
+            <%- include('partials/footer') %>
         </div>
+
 </body>
 
 </html>

@@ -74,6 +74,12 @@ header nav a {
     font-weight: 400;
 }
 
+
+img.hero {
+    margin: 3em 0 0;
+    display: block;
+}
+
 /* SEARCH FORM */
 
 .search-form {
@@ -225,4 +231,12 @@ footer {
     padding: 1em 0 1em;
     color: var(--color-dark);
     opacity: 0.6;
+}
+
+/* ABOUT PAGE  */
+
+.about {
+    font-size: 1.2em;
+    width: 65ch;
+
 }
