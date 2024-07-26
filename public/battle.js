@@ -172,3 +172,16 @@ function showArticles(articles) {
     articlesContainer.appendChild(articleElement);
   });
 }
+
+// if query params are set in the URL, convert them to input values
+const urlParams = new URLSearchParams(window.location.search);
+const topic_1 = urlParams.get("topic_a");
+const topic_2 = urlParams.get("topic_b");
+if (topic_1 && topic_2) {
+  input_1.value = topic_1;
+  input_2.value = topic_2;
+
+  document.getElementById("part_1").classList.add("remove");
+  document.getElementById("part_2").classList.add("show");
+  fetchData(input_1.value, input_2.value);
+}
