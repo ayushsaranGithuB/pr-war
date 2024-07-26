@@ -7,44 +7,137 @@
     <title>P.R. War - Who's winning the News?</title>
     <link rel="stylesheet" href="/home.css">
     <script src="welcome.js" defer></script>
+    <script src="battle.js" defer></script>
+
 </head>
 
 <body>
     <%- include('partials/navbar') %>
         <div id="container">
-            <img src="logo-animated.svg" width="250" alt="" class="hero">
-            <form class="search-form" action="/battle" method="get">
-                <h3>Select 2 competitors to start the battle.</h3>
-                <div class="inputs">
-                    <input id="search-topic-a" type="text" name="topic_a" placeholder="Enter a company or topic">
-                    <strong>VS</strong>
-                    <input id="search-topic-b" type="text" name="topic_b" placeholder="Select an opponent">
+            <div id="part_1">
+                <form class="search-form" action="/battle" method="get">
+                    <h1>Select 2 competitors to start the battle.</h1>
+                    <div class="inputs">
+                        <input id="search-topic-a" type="text" name="topic_a" placeholder="Enter a company or topic">
+                        <strong>VS</strong>
+                        <input id="search-topic-b" type="text" name="topic_b" placeholder="Select an opponent">
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+                <div class="scroller">
+                    <h4>Recent Fights:</h4>
+                    <ul class="tags">
+                        <li>Apple vs Microsoft</li>
+                        <li>Trump vs Kamala</li>
+                        <li>Google vs Facebook</li>
+                        <li>SpaceX vs Blue Origin</li>
+                        <li>Amazon vs Shopify</li>
+                        <li>ChatGPT vs Gemini</li>
+                        <li>Threads vs Twitter</li>
+                        <li>Netflix vs Hulu</li>
+                        <li>Apple vs Microsoft</li>
+                        <li>Trump vs Kamala</li>
+                        <li>Google vs Facebook</li>
+                        <li>SpaceX vs Blue Origin</li>
+                        <li>Amazon vs Shopify</li>
+                        <li>ChatGPT vs Gemini</li>
+                        <li>Threads vs Twitter</li>
+                        <li>Netflix vs Hulu</li>
+                    </ul>
                 </div>
-                <button type="submit">Search</button>
-            </form>
-            <div class="scroller">
-                <h4>Recent Fights:</h4>
-                <ul class="tags">
-                    <li>Apple vs Microsoft</li>
-                    <li>Trump vs Biden</li>
-                    <li>Google vs Facebook</li>
-                    <li>SpaceX vs Blue Origin</li>
-                    <li>Amazon vs Shopify</li>
-                    <li>ChatGPT vs Gemini</li>
-                    <li>Threads vs Twitter</li>
-                    <li>Netflix vs Hulu</li>
-                    <li>Apple vs Microsoft</li>
-                    <li>Trump vs Biden</li>
-                    <li>Google vs Facebook</li>
-                    <li>SpaceX vs BlueOrigin</li>
-                    <li>Amazon vs Shopify</li>
-                    <li>ChatGPT vs Gemini</li>
-                    <li>Threads vs Twitter</li>
-                    <li>Netflix vs Hulu</li>
-                </ul>
             </div>
-            <%- include('partials/footer') %>
-        </div>
+
+            <div id="part_2">
+                <div id="loading">
+                    <img src="loading.svg" alt="loading">
+                    <h2>Fetching news articles...</h2>
+                </div>
+
+                <div id="results">
+
+                    <div id="competitors">
+                        <h2 id="competitor_a"></h2>
+                        <span class="vs">
+                            vs
+                        </span>
+                        <h2 id="competitor_b"></h2>
+                    </div>
+
+
+
+                    <div id="scorecard">
+                        <h3>Scorecard</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id="column_a"></th>
+                                    <th>vs</th>
+                                    <th id="column_b"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="tot_mentions">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Total Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="avg_sentiment">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Average Sentiment</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_positive">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Positive Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_negative">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Negative Mentions</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                                <tr id="tot_score">
+                                    <td class="a">
+                                        <p>...</p>
+                                    </td>
+                                    <td>Total Score</td>
+                                    <td class="b">
+                                        <p>...</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="winner">
+                        <h3>Winner:</h3>
+                        <p id="winner_name">...</p>
+                    </div>
+
+
+                    <div id="sources">
+                        <h3>SOURCES</h3>
+                        <div id="articles_list"> </div>
+                    </div>
+                </div>
+                <%- include('partials/footer') %>
+            </div>
 
 </body>
 

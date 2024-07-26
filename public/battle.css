@@ -15,6 +15,7 @@
     width: 50%;
     margin: 3em auto 2em;
     padding: 1em 0 3em;
+    color: var(--color-dark);
 }
 
 #loading img {
@@ -58,8 +59,9 @@ span.vs {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-    line-height: 40px;
+    line-height: 37px;
     background-color: var(--color-accent);
+    color: var(--color-dark);
 }
 
 #results h2 {
@@ -74,11 +76,15 @@ span.vs {
     text-transform: uppercase;
     text-align: center;
     margin: 10px auto 10px;
+    color: var(--color-light);
+
 }
 
 #scorecard {
     grid-row: span 2;
     max-width: 370px;
+    color: var(--color-dark);
+
 }
 
 #scorecard table {
@@ -152,6 +158,7 @@ span.vs {
 
 #winner {
     text-align: center;
+    color: var(--color-dark);
 }
 
 #winner h3 {
@@ -175,10 +182,8 @@ span.vs {
     grid-column: span 2;
     margin-top: 30px;
     text-align: center;
-    background-color: var(--color-dark);
     color: var(--color-light);
     padding: 1em 0.5em 2em;
-    border-radius: 8px;
 }
 
 #sources h3 {

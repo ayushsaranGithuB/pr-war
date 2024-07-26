@@ -13,20 +13,25 @@ tags.forEach((tag) => {
   });
 });
 
-// prevent submit of empty input field
+// FORM HANDLING
 const form = document.querySelector("form");
 form.addEventListener("submit", (e) => {
+  // prevent submit of empty input field
+  e.preventDefault();
   if (input_1.value === "" || input_2.value === "") {
-    e.preventDefault();
     const tooltip = document.createElement("div");
     tooltip.textContent = "Enter 2 topics";
     tooltip.classList.add("tooltip");
     form.appendChild(tooltip);
   }
+
+  document.getElementById("part_1").classList.add("remove");
+  document.getElementById("part_2").classList.add("show");
+  fetchData(input_1.value, input_2.value);
 });
 
 // remove the tooltip when the input field is clicked
-input.addEventListener("click", () => {
+input_1.addEventListener("click", () => {
   const tooltip = document.querySelector(".tooltip");
   if (tooltip) {
     tooltip.remove();
