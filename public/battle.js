@@ -1,10 +1,5 @@
 // fetch the data from the API
-async function fetchData() {
-  // Get query parameters from the URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const topic_a = urlParams.get("topic_a");
-  const topic_b = urlParams.get("topic_b");
-
+async function fetchData(topic_a, topic_b) {
   if (topic_a && topic_b) {
     const response_a = await fetch("/api/search/" + topic_a);
     const apiResponse_a = await response_a.json();
@@ -16,6 +11,11 @@ async function fetchData() {
 
     document.getElementById("loading").classList.add("hide");
     document.getElementById("results").classList.add("show");
+
+    document.getElementById("competitor_a").innerText = topic_a;
+    document.getElementById("competitor_b").innerText = topic_b;
+    document.getElementById("column_a").innerText = topic_a;
+    document.getElementById("column_b").innerText = topic_b;
 
     showStats(apiResponse_a.result, "a");
     showStats(apiResponse_b.result, "b");
@@ -149,10 +149,10 @@ function caclulateWinner() {
   const urlParams = new URLSearchParams(window.location.search);
   if (score_a > score_b) {
     document.querySelector("#tot_score .a").classList.add("winner");
-    document.getElementById("winner_name").innerText = urlParams.get("topic_a");
+    document.getElementById("winner_name").innerText = input_1.value;
   } else if (score_a < score_b) {
     document.querySelector("#tot_score .b").classList.add("winner");
-    document.getElementById("winner_name").innerText = urlParams.get("topic_b");
+    document.getElementById("winner_name").innerText = input_2.value;
   } else {
     document.querySelector("#tot_score .a").classList.add("tied");
     document.querySelector("#tot_score .b").classList.add("tied");
@@ -173,7 +173,15 @@ function showArticles(articles) {
   });
 }
 
-// on load
-setTimeout(() => {
-  fetchData();
-}, 2000);
+// if query params are set in the URL, convert them to input values
+const urlParams = new URLSearchParams(window.location.search);
+const topic_1 = urlParams.get("topic_a");
+const topic_2 = urlParams.get("topic_b");
+if (topic_1 && topic_2) {
+  input_1.value = topic_1;
+  input_2.value = topic_2;
+
+  document.getElementById("part_1").classList.add("remove");
+  document.getElementById("part_2").classList.add("show");
+  fetchData(input_1.value, input_2.value);
+}

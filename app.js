@@ -37,10 +37,7 @@ app.get("/about", (req, res) => {
 // define the route for the /search endpoint
 app.get("/battle", (req, res) => {
   // Get the query parameter from the request
-  const query = req.query;
-  const topic_a = query.topic_a;
-  const topic_b = query.topic_b;
-  res.render("results", { topic_a, topic_b });
+  res.render("home");
 });
 
 // define the route for the /api/search endpoint
